@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Zapatilla Mujer Fucsia",
+    "description": "Zapatilla fucsia de cuero con cordones, estilo elegante y suela duradera que brinda comodidad diaria.",
+    "price": 22800,
+    "image": "/img/Zapatilla_Mujer_Fucsia.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Zapatito Infantil Rosa",
+    "description": "Zapatilla infantil rosa y verde con diseño alegre, ligera y resistente, perfecta para acompañar juegos y aventuras al aire libre.",
+    "price": 13200,
+    "image": "/img/Zapatito_Infantil_Rosa.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Zapatilla Nike Air Force 1",
+    "description": "Clásica zapatilla Nike Air Force 1 en blanco, diseño icónico y comodidad ideal para uso urbano diario.",
+    "price": 45000,
+    "image": "/img/Zapatilla_Nike_Air_Force1.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Zapatilla Hombre Negra",
+    "description": "Zapatilla urbana en negro con diseño moderno, suela resistente y gran comodidad para uso diario.",
+    "price": 28900,
+    "image": "/img/Zapatilla_Hombre_Negra.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Zapatito Infantil Azul",
+    "description": "Zapatilla infantil azul con diseño fresco y cómodo, ideal para jugar al aire libre y acompañar los primeros pasos con seguridad.",
+    "price": 12500,
+    "image": "/img/Zapatito_Infantil_Azul.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Zapatilla Mujer Casual Rosa",
+    "description": "Zapatilla casual en rosa con suela blanca, diseño moderno y gran confort para actividades cotidianas.",
+    "price": 31000,
+    "image": "/img/Zapatilla_Mujer_Casual_Rosa.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Zapatilla Hombre Casual Marrón",
+    "description": "Zapatilla casual de cuero marrón con estilo versátil, suela firme y ajuste cómodo para toda ocasión.",
+    "price": 24500,
+    "image": "/img/Zapatilla_Hombre_Casual_Marron.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Zapatilla Mostaza Urbana",
+    "description": "Zapatilla urbana color mostaza con estilo moderno, suela firme y gran comodidad para uso cotidiano.",
+    "price": 27500,
+    "image": "/img/Zapatilla_Mostaza_Urbana.jpg"
+  }
+]
