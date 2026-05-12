@@ -13,3 +13,15 @@
   text-decoration: none;
   color: inherit;
 }
+
+/* 📱 CELULAR */
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-list li {
+    font-size: 1.4rem;
+  }
+}
