@@ -13,6 +13,10 @@ header {
   color: inherit;
 }
 
+.logo-link:hover {
+  color: #1da1f2; /* azul estilo Twitter */
+}
+
 .logo-link span {
   font-size: 2rem;
   opacity: 0.8;
@@ -20,8 +24,8 @@ header {
 }
 
 .logo-img {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
 }
 

@@ -2,8 +2,29 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
 }
 
-footer .nav-list li {
+.nav-list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
   font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-list li:hover {
+  color: #1da1f2; /* azul estilo Twitter */
+}
+
+/* Iconos */
+.icon {
+  font-size: 1.2rem;
 }

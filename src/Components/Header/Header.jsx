@@ -1,5 +1,4 @@
-/*import logo from "../../react.svg"; */
-import logo from "../../assets/logo1.png";
+import logo from "../../assets/logo2.png";
 import { Nav } from "../Nav/Nav";
 import { Link } from "react-router-dom";
 
@@ -12,7 +11,7 @@ export const Header = () => {
         <Link to="/" className="logo-link">
           <img src={logo} alt="logo" className="logo-img" />
 
-          <span>React Matias</span>
+          <span>Matias Sport</span>
         </Link>
       </div>
       <Nav />
