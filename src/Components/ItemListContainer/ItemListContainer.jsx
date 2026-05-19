@@ -21,12 +21,6 @@ export const ItemListContainer = () => {
 
   return (
     <section>
-      {/* <h1>Componente ItemListContainer</h1>
-      <p>Este componente a futuro tendra logica y conexion a API</p>
-
-      <button onClick={getProducts}>Traer productos</button>
-      <button onClick={clearProducts}>Vaciar productos</button> */}
-
       <ItemList products={products} />
     </section>
   );

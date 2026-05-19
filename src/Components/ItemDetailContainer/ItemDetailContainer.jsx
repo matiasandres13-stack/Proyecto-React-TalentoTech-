@@ -7,7 +7,7 @@ export const ItemDetailContainer = () => {
 
   const [itemDetail, setItemDetail] = useState(null);
   const [loading, setLoading] = useState(true);
-  
+
   useEffect(() => {
     fetch("/Data/products.json")
       .then((res) => res.json())
@@ -29,6 +29,7 @@ export const ItemDetailContainer = () => {
 
   return (
     <section>
+      <section className="cart-container"></section>
       <h1>Detalles del producto</h1>
       <div className="products-container">
         <ItemDetail item={itemDetail} />

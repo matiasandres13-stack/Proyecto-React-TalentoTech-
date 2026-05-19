@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { useCart } from "../../context/cartcontext";
 import { CartList } from "./CartList";
 import { CartSummary } from "./CartSummary";
-
 import "./Carts.css";
 
 export const CartView = () => {

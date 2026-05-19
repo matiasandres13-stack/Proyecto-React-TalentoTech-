@@ -20,6 +20,10 @@ body {
 main {
   flex: 1;
 }
+h1 {
+  width: 100%;
+  text-align: center;
+}
 
 .primary {
   color: #eaeaea;
