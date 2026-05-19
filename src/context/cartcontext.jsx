@@ -60,7 +60,7 @@ Total de items en el carrito de compras
 Total a pagar del carrito de compras
 ------------------------------------------------------*/
   const getCartTotal = () => {
-    return cart.reduce((acc, element) => acc + element.precio, 0);
+    return cart.reduce((acc, element) => acc + element.price, 0);
   };
 
   /*------------------------------------------------------
@@ -73,6 +73,7 @@ Checkout del carrito de compras
   };
 
   const values = {
+    cart,
     addItem,
     removeItem,
     clearCart,
