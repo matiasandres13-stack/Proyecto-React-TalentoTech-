@@ -1,6 +1,8 @@
 import "./Footer.css";
 import { FaInstagram, FaTwitter } from "react-icons/fa";
 
+// Componente que muestra el pie de página de la aplicación, incluyendo un mensaje de copyright y enlaces a las redes sociales.
+
 export const Footer = () => {
   return (
     <footer>
