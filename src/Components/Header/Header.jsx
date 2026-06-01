@@ -3,8 +3,8 @@ import { Nav } from "../Nav/Nav";
 import { Link } from "react-router-dom";
 import "./Header.css";
 
-// Componente que muestra el encabezado de la aplicación, incluyendo el logo y la barra de navegación. 
-// El componente utiliza el componente Nav para mostrar la barra de navegación y el componente 
+// Muestra el encabezado de la aplicación, incluyendo el logo y la barra de navegación. 
+// Utiliza el componente Nav para mostrar la barra de navegación y el logo.
 // Link de react-router-dom para navegar a la página principal al hacer clic en el logo.
 
 export const Header = () => {

@@ -1,8 +1,8 @@
 import { useCart } from "../../context/cartcontext";
 import { Item } from "../Item/Item";
 
-// Muestra producto en el carrito de compras, utilizando el contexto del carrito para obtener
-// la función de eliminar producto del carrito
+// Muestra producto en el carrito de compras, utilizando el contexto del carrito para 
+// obtener la función de eliminar el producto del carrito.
 
 export const CartItem = ({ item }) => {
   const { removeItem } = useCart();
