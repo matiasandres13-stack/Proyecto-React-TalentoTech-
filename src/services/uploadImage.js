@@ -1,4 +1,4 @@
-const IMGBB_API_KEY = "153b4a365c0e2fb053dd9e231e447782"; //👈Seccion acerca(arriba a la izquierda) y luego en API, hacer clic en GET API-KEY
+const IMGBB_API_KEY = "153b4a365c0e2fb053dd9e231e447782"; //👈Ingresar a IMGBB, seccion acerca(arriba a la izquierda) y luego en API, hacer clic en GET API-KEY
 const ENDPOINT = "https://api.imgbb.com/1/upload";
 
 export const uploadImage = async (file) => {

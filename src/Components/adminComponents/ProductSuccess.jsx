@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import { replace, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 export const ProductSuccess = () => {
   const { id } = useParams();
