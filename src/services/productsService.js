@@ -17,24 +17,6 @@ import { db } from "../firebase/config";
 const productsRef = collection(db, "products");
 
 /* -------------------------------------------------------------------------- */
-/*                               TRAER PRODUCTOS                              */
-/* -------------------------------------------------------------------------- */
-export const getProducts = async () => {
-  try {
-    const snapshot = await getDocs(productsRef);
-
-    const productsFormat = snapshot.docs.map((doc) => {
-      return { id: doc.id, ...doc.data() };
-    });
-
-    return productsFormat;
-  } catch (err) {
-    console.error("Error al traer productos:", error);
-    return [];
-  }
-};
-
-/* -------------------------------------------------------------------------- */
 /*                            TRAER PRODUCTO POR ID                           */
 /* -------------------------------------------------------------------------- */
 // Funcion que SOLO pide un dato
@@ -57,5 +39,47 @@ export const getProductById = async (id) => {
   } catch (error) {
     console.error("Error al traer producto por ID:", error);
     return null;
+  }
+};
+
+/* -------------------------------------------------------------------------- */
+/*                         TRAER PRODUCTOS, SI FILTRAMOS POR CATEGORY         */
+/* -------------------------------------------------------------------------- */
+export const getByCategory = async (category) => {
+  try {
+    let queryRef;
+
+    //truthy
+    if (category) {
+      queryRef = query(productsRef, where("category", "==", category));
+    } else {
+      queryRef = productsRef;
+    }
+
+    // Traer los documentos:
+    const snapshot = await getDocs(queryRef);
+    //Mapeo de datos para formateo
+    const productsFormat = snapshot.docs.map((doc) => {
+      return { id: doc.id, ...doc.data() };
+    });
+    return productsFormat;
+  } catch (error) {
+    console.error("Error al filtrar productos:", error);
+    return [];
+  }
+};
+
+/* -------------------------------------------------------------------------- */
+/*                              ALTA DE PRODUCTO                              */
+/* -------------------------------------------------------------------------- */
+export const createProduct = async (productData) => {
+  try {
+    //Tan facil como usar la funcion addDoc y pasarle la coleccion y el doc a agregar
+    const docRef = await addDoc(productsRef, productData);
+
+    return docRef.id; // opcional, por si quieren usar el id para algo
+  } catch (error) {
+    console.error("Error al crear producto:", error);
+    throw error;
   }
 };

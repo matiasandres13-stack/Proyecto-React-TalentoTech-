@@ -16,6 +16,15 @@ export const Nav = () => {
           <Link to="/">Home</Link>
         </li>
         <li>
+          <Link to={"/category/mujer"}>Mujer</Link>
+        </li>
+        <li>
+          <Link to={"/category/hombre"}>Hombre</Link>
+        </li>
+        <li>
+          <Link to={"/category/infantil"}>Infantil</Link>
+        </li>
+        <li>
           <Link to="/carrito">
             Carrito 🛒{" "}
             {totalItems > 0 && <span className="incart">{totalItems}</span>}
